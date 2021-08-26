@@ -1,0 +1,13 @@
+
+  trg:
+    image: trg:stable
+    container_name: trg
+    hostname: trg
+    restart: always
+    user: root
+    volumes:
+      - /tmp/trg/data:/tmp/trg/data
+    expose:
+      - "9000"
+    ports:
+      - "9000:9000"
